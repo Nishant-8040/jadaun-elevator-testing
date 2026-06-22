@@ -8,6 +8,8 @@ font-family:Arial,sans-serif;
 body{
 background:#081526;
 color:white;
+position:relative;
+overflow-x:hidden;
 }
 
 .navbar{
