@@ -149,3 +149,12 @@ opacity:0.04;
 z-index:-1;
 pointer-events:none;
 }
+.catalog{
+padding:60px 20px;
+text-align:center;
+}
+
+.catalog iframe{
+max-width:100%;
+background:white;
+}
