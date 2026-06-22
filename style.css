@@ -158,3 +158,29 @@ text-align:center;
 max-width:100%;
 background:white;
 }
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:50px 20px;
+}
+
+.stat-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:15px;
+text-align:center;
+border:1px solid rgba(255,255,255,.15);
+}
+
+.stat-card h2{
+font-size:40px;
+color:silver;
+}
+
+.hero-sub{
+font-size:20px;
+margin-top:15px;
+opacity:.9;
+}
