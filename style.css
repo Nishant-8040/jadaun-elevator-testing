@@ -29,11 +29,18 @@ text-decoration:none;
 }
 
 .hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:120px 20px;
+padding:20px;
+
 background:
-linear-gradient(rgba(8,21,38,.88),rgba(8,21,38,.88)),
+linear-gradient(rgba(8,21,38,.85),rgba(8,21,38,.85)),
 url("logo.png");
+
 background-size:350px;
 background-repeat:no-repeat;
 background-position:center;
@@ -80,11 +87,11 @@ transition:.3s;
 transform:translateY(-8px);
 box-shadow:0 12px 35px rgba(0,0,0,.4);
 }
-.team-wrap{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
+.team{
+background:rgba(255,255,255,.08);
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.12);
 }
 
 .team img{
@@ -118,8 +125,16 @@ font-weight:bold;
 font-size:32px;
 }
 .navbar{
-flex-direction:column;
-}
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(13,32,56,.85);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 .logo{
 display:flex;
@@ -165,15 +180,18 @@ gap:20px;
 padding:50px 20px;
 }
 
-.stat-card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(10px);
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.12);
+border-radius:20px;
 padding:25px;
-border-radius:15px;
-text-align:center;
-border:1px solid rgba(255,255,255,.15);
+transition:.4s;
 }
 
+.card:hover{
+transform:translateY(-10px);
+}
 .stat-card h2{
 font-size:40px;
 color:silver;
@@ -183,4 +201,11 @@ color:silver;
 font-size:20px;
 margin-top:15px;
 opacity:.9;
+}
+section{
+padding:80px 20px;
+}
+
+section:nth-child(even){
+background:rgba(255,255,255,.03);
 }
