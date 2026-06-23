@@ -213,3 +213,24 @@ padding:80px 20px;
 section:nth-child(even){
 background:rgba(255,255,255,.03);
 }
+
+.gallery{
+    max-width:1200px;
+    margin:80px auto;
+    padding:40px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:36px;
+    margin-bottom:10px;
+    color:#fff;
+}
+
+.gallery p{
+    color:#ccc;
+    margin-bottom:25px;
+}
