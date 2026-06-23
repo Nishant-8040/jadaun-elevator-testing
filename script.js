@@ -1,25 +1,35 @@
-const counters=document.querySelectorAll(".stat-card h2");
+const counters = document.querySelectorAll(".stat-card h2");
 
-counters.forEach(counter=>{
-const target=counter.innerText.replace(/\D/g,'');
+counters.forEach(counter => {
 
-if(!target) return;
+const originalText = counter.innerText;
 
-let count=0;
+if(originalText === "2015") return;
 
-const update=()=>{
-const increment=target/100;
+const target = parseInt(originalText.replace(/\D/g,''));
 
-if(count<target){
-count+=increment;
-counter.innerText=Math.floor(count)+"+";
+let count = 0;
+
+const update = () => {
+
+const increment = Math.ceil(target / 100);
+
+if(count < target){
+
+count += increment;
+
+if(count > target) count = target;
+
+counter.innerText = count + "+";
+
 setTimeout(update,20);
-}else{
-counter.innerText=target+"+";
+
 }
+
 };
 
 update();
+
 });
 
 
