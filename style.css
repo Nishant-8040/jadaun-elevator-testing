@@ -227,3 +227,16 @@ box-shadow:0 5px 15px rgba(0,0,0,.25);
 .whatsapp-float:hover{
 transform:translateY(-3px);
 }
+.card:hover,
+.stat-card:hover,
+.team-card:hover{
+transform:translateY(-8px);
+transition:.3s ease;
+box-shadow:0 15px 35px rgba(212,175,55,.35);
+}
+
+.btn:hover{
+background:#b8941f;
+transform:translateY(-3px);
+transition:.3s;
+}
