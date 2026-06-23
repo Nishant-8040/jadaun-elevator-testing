@@ -240,3 +240,15 @@ background:#b8941f;
 transform:translateY(-3px);
 transition:.3s;
 }
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:50px;
+}
+
+.footer h3{
+color:#d4af37;
+margin-bottom:10px;
+}
