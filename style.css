@@ -50,6 +50,7 @@ gap:20px;
 color:white;
 text-decoration:none;
 font-weight:600;
+transition:.3s;
 }
 
 .menu a:hover
@@ -63,13 +64,14 @@ align-items:center;
 text-align:center;
 padding:40px;
 background:linear-gradient(135deg,#fffdf5,#f6e6a8);
+color:#111;
 }
 
 .hero h1{
 font-size:60px;
 max-width:900px;
-color:#111;
 margin-bottom:20px;
+text-shadow:0 0 15px rgba(212,175,55,.35);
 }
 
 .hero p{
@@ -85,6 +87,12 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
+.contact-numbers{
+margin-top:15px;
+font-weight:bold;
+color:#d4af37;
+}
+
 .btn{
 background:#d4af37;
 color:#111;
@@ -93,10 +101,12 @@ border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 display:inline-block;
+transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-2px);
+background:#b8941f;
+transform:translateY(-3px);
 }
 
 .stats{
@@ -115,6 +125,7 @@ border-radius:15px;
 text-align:center;
 box-shadow:0 4px 15px rgba(0,0,0,.08);
 border:2px solid #d4af37;
+transition:.3s;
 }
 
 .stat-card h2{
@@ -159,6 +170,14 @@ border:2px solid #d4af37;
 border-radius:15px;
 font-weight:bold;
 text-align:center;
+transition:.3s;
+}
+
+.card:hover,
+.stat-card:hover,
+.team-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(212,175,55,.35);
 }
 
 .team-grid{
@@ -169,6 +188,7 @@ gap:25px;
 
 .team-card{
 text-align:center;
+transition:.3s;
 }
 
 .team-card img{
@@ -180,12 +200,51 @@ border-radius:20px;
 border:4px solid #d4af37;
 }
 
-#catalog{
+#catalog,
+#contact{
 text-align:center;
 }
 
-#contact{
+#contact h3{
+color:#d4af37;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+#contact p{
+margin-bottom:10px;
+line-height:1.8;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+z-index:9999;
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.whatsapp-float:hover{
+transform:translateY(-3px);
+}
+
+.footer{
+background:#111;
+color:white;
 text-align:center;
+padding:40px 20px;
+margin-top:50px;
+}
+
+.footer h3{
+color:#d4af37;
+margin-bottom:10px;
 }
 
 @media(max-width:768px){
@@ -208,52 +267,5 @@ font-size:40px;
 .hero p{
 font-size:18px;
 }
-
-}
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-z-index:9999;
-box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
-.whatsapp-float:hover{
-transform:translateY(-3px);
-}
-.card:hover,
-.stat-card:hover,
-.team-card:hover{
-transform:translateY(-8px);
-transition:.3s ease;
-box-shadow:0 15px 35px rgba(212,175,55,.35);
-}
-
-.btn:hover{
-background:#b8941f;
-transform:translateY(-3px);
-transition:.3s;
-}
-.footer{
-background:#111;
-color:white;
-text-align:center;
-padding:40px 20px;
-margin-top:50px;
-}
-
-.footer h3{
-color:#d4af37;
-margin-bottom:10px;
-}
-.contact-numbers{
-margin-top:15px;
-font-weight:bold;
-color:#d4af37;
-}
