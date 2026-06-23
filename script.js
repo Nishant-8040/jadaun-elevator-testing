@@ -1,10 +1,25 @@
-window.addEventListener("scroll", () => {
-const navbar = document.querySelector(".navbar");
+const counters=document.querySelectorAll(".stat-card h2");
 
-if (window.scrollY > 50) {
-navbar.style.boxShadow = "0 4px 20px rgba(0,0,0,0.25)";
-} else {
-navbar.style.boxShadow = "0 2px 10px rgba(0,0,0,0.2)";
+counters.forEach(counter=>{
+const target=counter.innerText.replace(/\D/g,'');
+
+if(!target) return;
+
+let count=0;
+
+const update=()=>{
+const increment=target/100;
+
+if(count<target){
+count+=increment;
+counter.innerText=Math.floor(count)+"+";
+setTimeout(update,20);
+}else{
+counter.innerText=target+"+";
 }
+};
+
+update();
 });
+
 
