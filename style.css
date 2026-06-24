@@ -297,3 +297,20 @@ transition:.3s;
 transform:scale(1.05);
 box-shadow:0 10px 25px rgba(212,175,55,.4);
 }
+.email-float{
+position:fixed;
+bottom:85px;
+right:20px;
+background:#d4af37;
+color:#111;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+z-index:9999;
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.email-float:hover{
+transform:translateY(-3px);
+}
